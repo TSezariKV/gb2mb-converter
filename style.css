@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.gb-wrapper,
+.mb-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#convert-btn {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -80px;
+    width: 130px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+p,
+label {
+    font-size: 25px;
+}
+label {
+    margin-bottom: 50px;
+}
+#gb {
+    width: 100px;
+    font-size: 20px;
+    padding: 5px;
+}
+p {
+    margin: 0;
+}
+.mb {
+    margin-bottom: 50px;
+}
+.equals-sign {
+    font-size: 50px;
+}
