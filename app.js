@@ -1,12 +1,16 @@
 const gbInput = document.getElementById('gb')
-const mbDisplay = document.getElementById('mb-display')
+const mbInput = document.getElementById('mb')
 const convertButton = document.getElementById('convert-btn')
 
-function convert() {
-    let gbInputValue = gbInput.value
-    let mb = gbInputValue * 1024
+const gbValue = gbInput.value
+const mbValue = mbInput.value
 
-    mbDisplay.innerHTML = mb
-}
-
-convertButton.addEventListener('click', convert)
+setInterval(() => {
+    if(gbInput != gbValue) {
+        mbInput.value = gbInput.value * 1024
+    } else {
+        if(mbInput != mbInput) {
+            gbInput.value = mbInput.value / 1024
+        }
+    }
+}, 500);
